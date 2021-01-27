@@ -9,7 +9,7 @@ const routes: Routes = [
   {path: 'students', component: StudentsComponent},
   {path: 'add', component: AddComponent},
   {path: 'edit/:id', component: EditComponent},
-  { path: '**', redirectTo: ''}, //автоматическое перенаправление 
+  { path: '**', redirectTo: '/students'}, //автоматическое перенаправление 
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
